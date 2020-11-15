@@ -104,6 +104,24 @@ print("-------------------------")
 print(f"Winner: {winner}")
 print("-------------------------")
 
+#In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+PyPoll_file = os.path.join("Resources", "PyPoll_JBK.txt")
+with open (PyPoll_file, "w") as outfile:
+    outfile.write("Election Results\n")
+    outfile.write("----------------------------\n")
+    outfile.write(f"Total Votes {total_votes}\n")
+    outfile.write("----------------------------\n")
+    outfile.write(f"Correy: {Correy_percent}% ({Correy_votes}\n")
+    outfile.write(f"Khan: {Khan_percent}% ({Khan_votes}\n")
+    outfile.write(f"Li: {Li_percent}% ({Li_votes}\n")
+    outfile.write(f"Otooley: {Otooley_percent}% ({Otooley_votes}\n")
+    outfile.write("-------------------------\n")
+    outfile.write(f"Winner: {winner}\n")
+    outfile.write("-------------------------\n")
+
+
+
+
 
 
 
